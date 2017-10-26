@@ -1,0 +1,104 @@
+.main-container .left-container {
+  height: -webkit-fill-available;
+  padding-right: 10px;
+  padding-top: 20%;
+}
+
+.main-container .preview-container {
+  height: 680px;
+  background: gold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-container .preview-container .preview-header {
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-container .preview-container .preview-header .preview-header-recent {
+  width: 80px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.main-container .preview-container .preview-header .preview-header-center {
+  width: auto;
+}
+
+.main-container .preview-container .preview-header .preview-header-right {
+  width: 80px;
+  display: grid;
+  align-items: flex-end;
+}
+
+.main-container .preview-container .preview-body {
+  height: auto;
+  background: lightcyan;
+  flex: auto;
+}
+
+.main-container .preview-container .preview-body .user-avatar {
+  width: 70px;
+  height: 70px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.main-container .preview-container .preview-body .bot-details {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container .preview-container .preview-body .contents {
+  height: auto;
+}
+
+.main-container .preview-container .preview-footer {
+  height: 50px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-container .preview-container .preview-footer button {
+  font-size: 24px;
+}
+
+.main-container .preview-container .preview-footer button .left {
+  margin-top: -7px;
+  margin-left: -8px;
+}
+
+.main-container .preview-container .preview-footer button .right {
+  margin-top: -7px;
+  margin-right: -10px;
+}
+
+.main-container .preview-container .preview-footer .interact {
+  background: transparent;
+  height: 30px;
+  width: 200px;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.main-container .right-container {
+  height: -webkit-fill-available;
+  padding-left: 10px;
+  padding-top: 20%;
+}
+
+.main-container .say-button {
+  height: 60px;
+}
+
+.main-container .say-button .say-button-label {
+  padding: 10px 30px 10px 30px;
+  font-size: 16px;
+  font-weight: 500;
+}
