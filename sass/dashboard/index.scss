@@ -1,84 +1,4 @@
 .main-container {
-    .left-container {
-        height: -webkit-fill-available;
-        padding-right: 10px;
-        padding-top: 20%;        
-    }
-    .preview-container {
-        height: 680px;
-        background: gold;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        .preview-header {
-            // width: -webkit-fill-available;
-            height: 65px;
-            display: flex;
-            justify-content: space-between;
-            .preview-header-recent {
-                width: 80px;
-                display: flex;
-                align-items: flex-end;
-            }
-            .preview-header-center {
-                width: auto;
-            }
-            .preview-header-right {
-                width: 80px;
-                display: grid;
-                align-items: flex-end;
-            }
-        }
-        .preview-body {
-            height: auto;
-            background: lightcyan;
-            flex: auto;
-            .user-avatar {
-                width: 70px;
-                height: 70px;
-                margin-left: 20px;
-                margin-top: 10px;
-                margin-bottom: 10px;
-            }
-            .bot-details {
-                margin-left: 20px;
-                display: flex;
-                flex-direction: column;
-            }
-            .contents {
-                height: auto;
-            }
-        }
-        .preview-footer {
-            height: 50px;
-            background: white;
-            display: flex;
-            justify-content: space-between;
-            button {
-                font-size: 24px;
-                .left { 
-                    margin-top: -7px;
-                    margin-left: -8px;
-                }
-                .right {
-                    margin-top: -7px;
-                    margin-right: -10px;
-                }
-            }
-            .interact {
-                background: transparent;
-                height: 30px;
-                width: 200px;
-                margin-top: 10px;
-                font-size: 20px;
-            }
-        }
-    }
-    .right-container {
-        height: -webkit-fill-available;        
-        padding-left: 10px;
-        padding-top: 20%;
-    }
     .say-button {
         height: 60px;
         .say-button-label {
@@ -86,5 +6,13 @@
             font-size: 16px;
             font-weight: 500;
         }
+    }
+    .nav-tabs>li>a {
+        padding: 3px 10px;
+    }
+    .chatflowOverlay {
+        position: absolute;
+        right: 30px;
+        top: 20px;
     }
 }

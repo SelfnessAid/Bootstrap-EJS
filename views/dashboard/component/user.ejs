@@ -1,0 +1,58 @@
+<div class="col-sm-4 col-md-4 col-lg-4 right-container text-left">
+        <div class="chatflow-preview">
+            <a class="inline-block" href="/images/chatflow-preview.png" data-plugin="magnificPopup" data-close-btn-inside="false" data-fixed-contentpos="true" data-main-class="mfp-margin-0s mfp-with-zoom" data-zoom="{&quot;enabled&quot;: &quot;true&quot;,&quot;duration&quot;:&quot;300&quot;}">
+                <img class="img-responsive" src="/images/chatflow-preview.png" alt="..." width="220">
+            </a>
+        </div>
+    <button type="button" id="small-user-say" class="btn btn-primary btn-round btn-lg say-button">
+        <label class="say-button-label">
+            < USER SAYS
+        </label>
+    </button>
+
+    <div id="expanded-user-say" class="panel user-reply-container">
+        <div class="panel-body padding-0">
+            <div class="user-reply-header">
+                <label class="say-button-label">&lt; USER SAYS</label>
+                <button id="close-expended-userview" class="btn btn-pure btn-default icon fa-close"></button>
+            </div>
+            <ul class="nav nav-tabs nav-tabs-solid " data-plugin="nav-tabs" role="tablist">
+                <li class="active" role="presentation"><a data-toggle="tab" href="#userTextReply" aria-controls="userTextReply" role="tab" aria-expanded="true"><i class="icon fa-font margin-0" aria-hidden="true"></i></a></li>
+                <li role="presentation" class=""><a data-toggle="tab" href="#userImageReply" aria-controls="userImageReply" role="tab" aria-expanded="false"><i class="icon md-camera-add margin-0" aria-hidden="true"></i></a></li>
+                <li role="presentation" class=""><a data-toggle="tab" href="#userGeolocationReply" aria-controls="userGeolocationReply" role="tab" aria-expanded="false"><i class="icon fa-map-marker margin-0" aria-hidden="true"></i></a></li>
+                <li role="presentation" class=""><a data-toggle="tab" href="#userVoiceReply" aria-controls="userVoiceReply" role="tab" aria-expanded="false"><i class="icon fa-microphone margin-0" aria-hidden="true"></i></a></li>
+            </ul>
+            <div class="user-reply-body">
+                <div class="tab-content">
+                    <div class="tab-pane active" id="userTextReply" role="tabpanel">
+                        <textarea placeholder="Type a message..." autofocus></textarea>
+                    </div>
+                    <div class="tab-pane" id="userImageReply" role="tabpanel">
+                        <div class="example">
+                            <input type="file" id="input-file-now" data-plugin="dropify" data-default-file=""/>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="userGeolocationReply" role="tabpanel">
+                        <label>LOCATION SHARED BY THE USER</label>
+                        <input type="text" placeholder="Enter a location" style="width:250px; margin-top:-15px; margin-bottom:40px;">
+                    </div>
+                    <div class="tab-pane" id="userVoiceReply" role="tabpanel">
+                        <label>COOMING SOON...</label>
+                    </div>
+                </div>
+            </div>
+            <div class="user-reply-footer">
+                <div class="additional-buttons">
+                    <button class="btn btn-pure icon md-time"></button>
+                    <button class="btn btn-pure icon md-mood"></button>
+                </div>
+                <div class="add-button">
+                    <button type="button" class="btn btn-outline btn-round">
+                        <label>ADD</label>
+                        <i class="icon md-comment-text pull-right" aria-hidden="true" style="margin-top:-6px;"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

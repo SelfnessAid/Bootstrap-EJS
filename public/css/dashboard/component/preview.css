@@ -1,0 +1,82 @@
+.preview-container {
+  height: 680px;
+  background: gold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.preview-container .preview-header {
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.preview-container .preview-header .preview-header-recent {
+  width: 80px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.preview-container .preview-header .preview-header-center {
+  width: auto;
+}
+
+.preview-container .preview-header .preview-header-right {
+  width: 80px;
+  display: grid;
+  align-items: flex-end;
+}
+
+.preview-container .preview-body {
+  height: auto;
+  background: lightcyan;
+  flex: auto;
+}
+
+.preview-container .preview-body .user-avatar {
+  width: 70px;
+  height: 70px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.preview-container .preview-body .bot-details {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.preview-container .preview-body .contents {
+  height: auto;
+}
+
+.preview-container .preview-footer {
+  height: 50px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.preview-container .preview-footer button {
+  font-size: 24px;
+}
+
+.preview-container .preview-footer button .left {
+  margin-top: -7px;
+  margin-left: -8px;
+}
+
+.preview-container .preview-footer button .right {
+  margin-top: -7px;
+  margin-right: -10px;
+}
+
+.preview-container .preview-footer .interact {
+  background: transparent;
+  height: 30px;
+  width: 200px;
+  margin-top: 10px;
+  font-size: 20px;
+}

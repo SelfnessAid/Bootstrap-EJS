@@ -1,0 +1,10 @@
+.site-navbar .navbar-container {
+  margin-left: 0px !important;
+}
+
+.site-menubar-unfold .page,
+.site-menubar-unfold .site-footer,
+.site-menubar-fold .page,
+.site-menubar-fold .site-footer {
+  margin-left: 0px !important;
+}

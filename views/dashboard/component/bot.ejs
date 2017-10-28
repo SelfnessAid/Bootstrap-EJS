@@ -1,0 +1,74 @@
+<div class="col-sm-4 col-md-4 col-lg-4 left-container text-right">
+    <button type="button" id="small-bot-say" class="btn btn-danger btn-round btn-lg say-button">
+        <label class="say-button-label">
+            BOT SAYS &gt;
+        </label>
+    </button>
+
+    <div id="expanded-bot-say" class="panel bot-reply-container">
+            <div class="panel-body padding-0">
+                <div class="bot-reply-header">
+                    <label class="say-button-label">BOT SAYS ></label>
+                    <button id="close-expanded-botview" class="btn btn-pure btn-default icon fa-close"></button>
+                </div>
+                <ul class="nav nav-tabs nav-tabs-solid " data-plugin="nav-tabs" role="tablist">
+                    <li class="active" role="presentation"><a data-toggle="tab" href="#botTextReply" aria-controls="botTextReply" role="tab" aria-expanded="true"><i class="icon fa-font margin-0" aria-hidden="true"></i></a></li>
+                    <li role="presentation" class=""><a data-toggle="tab" href="#botCarouselReply" aria-controls="botCarouselReply" role="tab" aria-expanded="false"><i class="icon md-view-carousel margin-0" aria-hidden="true"></i></a></li>
+                    <li role="presentation" class=""><a data-toggle="tab" href="#botImageReply" aria-controls="botImageReply" role="tab" aria-expanded="false"><i class="icon md-camera-add margin-0" aria-hidden="true"></i></a></li>
+                    <li role="presentation" class=""><a data-toggle="tab" href="#botButtonsReply" aria-controls="botButtonsReply" role="tab" aria-expanded="false"><i class="icon md-view-list margin-0" aria-hidden="true"></i></a></li>
+                    <li role="presentation" class=""><a data-toggle="tab" href="#botQuickReply" aria-controls="botQuickReply" role="tab" aria-expanded="false"><i class="icon md-power-input margin-0" aria-hidden="true"></i></a></li>
+                </ul>
+                <div class="bot-reply-body">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="botTextReply" role="tabpanel">
+                            <div class="text-container">
+                                <textarea placeholder="Type a message..." autofocus></textarea>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="botCarouselReply" role="tabpanel">
+                            <div class="carousel-container">
+                                <input type="file" id="input-file-now" data-plugin="dropify" data-default-file="" style="margin-top:10px;"/>
+                                <input type="text" placeholder="Title" style="font-weight:700; font-size:16px;"/>
+                                <input type="text" placeholder="Subtitle" style="font-size: 11px;"/>
+                                <input type="text" placeholder="Button1" style="text-align:right; color: blue; font-weight:400"/>
+                                <input type="text" placeholder="Button2"  style="text-align:right; color: blue; font-weight:400"/>
+                                <input type="text" placeholder="Button3"  style="text-align:right; color: blue; font-weight:400"/>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="botImageReply" role="tabpanel">
+                            <div class="image-container">
+                                <input type="file" id="input-file-now" data-plugin="dropify" data-default-file=""/>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="botButtonsReply" role="tabpanel">
+                            <div class="buttons-container">
+                                <textarea placeholder="Text" autofocus></textarea>
+                                <input type="text" placeholder="Button1" style="text-align:right; color: blue; font-weight:400"/>
+                                <input type="text" placeholder="Button2"  style="text-align:right; color: blue; font-weight:400"/>
+                                <input type="text" placeholder="Button3"  style="text-align:right; color: blue; font-weight:400"/>
+                            </div>
+                            
+                        </div>
+                        <div class="tab-pane" id="botQuickReply" role="tabpanel">
+                            <div class="quickReply-container">
+                                <input type="text" placeholder="Quick Reply 1" class="quick-reply-button"/>
+                                <input type="text" placeholder="+ Add New" class="quick-reply-button" readonly/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bot-reply-footer">
+                    <div class="additional-buttons">
+                        <button class="btn btn-pure icon md-time"></button>
+                        <button class="btn btn-pure icon md-mood"></button>
+                    </div>
+                    <div class="add-button">
+                        <button type="button" class="btn btn-outline btn-round">
+                            <label>ADD</label>
+                            <i class="icon md-comment-text pull-right" aria-hidden="true" style="margin-top:-6px;"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>

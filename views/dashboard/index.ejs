@@ -15,8 +15,14 @@
     <link rel="stylesheet" href="/assets/global/vendor/chartist-js/chartist.css">
     <link rel="stylesheet" href="/assets/global/vendor/jvectormap/jquery-jvectormap.css">
     <link rel="stylesheet" href="/assets/global/vendor/chartist-plugin-tooltip/chartist-plugin-tooltip.css">
+    <link rel="stylesheet" href="/assets/global/vendor/dropify/dropify.css">    
+    <link rel="stylesheet" href="/assets/global/vendor/magnific-popup/magnific-popup.css">
     <link rel='stylesheet' href='/css/include/navbar.css'>
     <link rel='stylesheet' href='/css/dashboard/index.css'>
+    <link rel='stylesheet' href='/css/dashboard/component/bot.css'>
+    <link rel='stylesheet' href='/css/dashboard/component/preview.css'>
+    <link rel='stylesheet' href='/css/dashboard/component/user.css'>
+    <link rel='stylesheet' href='/css/global/index.css'>
     <!-- Scripts -->
     <script src="/assets/global/vendor/modernizr/modernizr.js"></script>
     <script src="/assets/global/vendor/breakpoints/breakpoints.js"></script>
@@ -32,64 +38,55 @@
   <!-- Page -->
     <% include ../include/navbar %>
     <div class="page animsition main-container">
-        <div class="col-sm-4 col-md-4 col-lg-4 left-container text-right">
-            <button type="button" class="btn btn-danger btn-round btn-lg say-button">
-                <label class="say-button-label">
-                    BOT SAYS >
-                </label>
-            </button> 
-        </div>
-        <div class="col-sm-4 col-md-4 col-lg-4 preview-container">
-            <div class="preview-header">
-                <div class="preview-header-recent text-left">
-                    <h4 style="color:blue">< Recent</h4>
-                </div>
-                <div class="preview-header-center text-center">
-                    <h4 style="margin-top:15px; margin-bottom:0px;">Test</h4>
-                    Typically replies instantly
-                </div>
-                <div class="preview-header-right text-right">
-                    <h4 style="color:blue">Block</h4>
-                </div>
-            </div>
-
-            <div class="row preview-body">
-                <div style="display:flex">
-                    <div class="user-avatar">
-                        <img class="img-circle img-responsive" style="width:70px;height:70px" src="/assets/global/portraits/5.jpg" alt="..."/>
-                    </div>
-                    <div class="bot-details">
-                        <h3 style="margin-top:10px; margin-bottom:5px;">Test</h3>
-                        0 people like this
-                        <label>App page</label>
-                    </div>
-                </div>
-                <div class="contents">
-
-                </div>
-            </div>
-            <div class="row preview-footer">
-                <button class="btn btn-pure btn-primary icon fa-plus-circle"></button>
-                <button class="btn btn-pure btn-default icon fa-camera"></button>
-                <button class="btn btn-pure btn-default icon fa-image"></button>
-                <button class="btn btn-pure btn-default icon fa-microphone"></button>
-                <button class="btn btn-round btn-outline btn-default interact">
-                    <div class="icon fa-font pull-left left"></div>
-                    <div class="icon md-mood pull-right right"></div>
-                </button>
-                <button class="btn btn-pure btn-primary icon fa-reorder"></button>
-            </div>
-        </div>
-        <div class="col-sm-4 col-md-4 col-lg-4 right-container text-left">
-            <button type="button" class="btn btn-primary btn-round btn-lg say-button">
-                <label class="say-button-label">
-                    < USER SAYS
-                </label>
-            </button> 
-        </div>
+        
+        <% include ./component/bot %>
+        <% include ./component/preview %>
+        <% include ./component/user %>
     </div>
     
     <% include ../include/script %>
+    <script src="/assets/global/vendor/jquery-ui/jquery-ui.js"></script>
+    <script src="/assets/global/vendor/blueimp-tmpl/tmpl.js"></script>
+    <script src="/assets/global/vendor/blueimp-canvas-to-blob/canvas-to-blob.js"></script>
+    <script src="/assets/global/vendor/blueimp-load-image/load-image.all.min.js"></script>
+    <script src="/assets/global/vendor/blueimp-file-upload/jquery.fileupload.js"></script>
+    <script src="/assets/global/vendor/blueimp-file-upload/jquery.fileupload-process.js"></script>
+    <script src="/assets/global/vendor/blueimp-file-upload/jquery.fileupload-image.js"></script>
+    <script src="/assets/global/vendor/blueimp-file-upload/jquery.fileupload-audio.js"></script>
+    <script src="/assets/global/vendor/blueimp-file-upload/jquery.fileupload-video.js"></script>
+    <script src="/assets/global/vendor/blueimp-file-upload/jquery.fileupload-validate.js"></script>
+    <script src="/assets/global/vendor/blueimp-file-upload/jquery.fileupload-ui.js"></script>
+    <script src="/assets/global/vendor/dropify/dropify.min.js"></script>
+    <script src="/assets/global/js/components/dropify.js"></script>
+    <script src="/assets/global/vendor/magnific-popup/jquery.magnific-popup.js"></script>
+    <script src="/assets/global/js/components/magnific-popup.js"></script>
+    <script>
+        $("#small-bot-say").click(function() {
+            var $me = $("#small-bot-say");
+            var $target = $("#expanded-bot-say");
+            $me.hide("slow");
+            $target.show("slide", {direction:"right"}, "slow");            
+        });
     
+        $("#close-expanded-botview").click(function() {
+            var $me = $("#small-bot-say");
+            var $target = $("#expanded-bot-say");
+            $me.show("slow");
+            $target.hide("slide", {direction:"right"}, "slow");        
+        });
+        $("#small-user-say").click(function() {
+            var $me = $("#small-user-say");
+            var $target = $("#expanded-user-say");
+            $me.hide("slow");
+            $target.show("slide", {direction:"left"}, "slow");            
+        });
+    
+        $("#close-expended-userview").click(function() {
+            var $me = $("#small-user-say");
+            var $target = $("#expanded-user-say");
+            $me.show("slow");
+            $target.hide("slide", {direction:"left"}, "slow");        
+        });
+    </script>
 </body>
 </html>
